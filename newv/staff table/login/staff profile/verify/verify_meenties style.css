@@ -1,0 +1,205 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-image:url("bc6.jpg");
+  background-position:center;
+  background-size: cover;
+  position: relative;
+}
+.container {
+  
+  max-width: 500px;
+  width: 100%;
+  background: #fff5;
+  border: 3px solid #d5d1defe;
+  border-radius: 40px;
+  
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  
+  box-shadow: 0 .4rem .8rem #0005;
+}
+/*
+.box{
+  max-width: 700px; /*width: 40vw; height: 70vh;*
+  padding: 25px;
+  width: 100%;
+  height: 500px;
+  background: #fff5;
+  text-align: center;
+  position: relative;
+  top: 20%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  border: 4px solid #d5d1defe;
+  border-radius: 40px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 .4rem .8rem #0005; box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}*/
+
+
+
+.container header {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 500;
+  text-align: center;
+}
+.container .form {
+  margin-top: 30px;
+}
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-box label {
+  color: black;
+}
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column {
+  display: flex;
+  column-gap: 15px;
+  margin: 5px;
+}/*
+.form .gender-box {
+  margin-top: 20px;
+}
+.gender-box h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.form :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+.form .gender {
+  column-gap: 5px;
+}
+.gender input {
+  accent-color: rgb(130, 106, 251);
+}
+.form :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+.gender label {
+  color: #707070;
+}
+.address :where(input, .select-box) {
+  margin-top: 15px;
+}
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}*/
+.form button {
+  height: 45px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #007bff;;
+  border-radius: 3rem;
+}/*
+.form button:hover {
+  background: rgb(88, 56, 250);
+}
+Responsive*/
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  .form :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+}
+
+.form .color {
+  display: flex;
+  column-gap: 5px;
+
+ 
+}
+.file-input {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  
+}
+
+.file-input input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+}
+
+.file-input-label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background-color: #4caf50;
+  color: #fff;
+  border-radius: 0.25rem;
+}
+
+.file-input-name {
+  display: inline-block;
+  margin-left: 1rem;
+  font-size: 0.875rem;
+  font-style: italic;
+  color: black;
+  margin-top: 0.3em;
+ 
+}
+
+/* Style to show selected file name */
+#image1:focus + .file-input-name {
+  color: black;
+}
+
+
+
+
+
